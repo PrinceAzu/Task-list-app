@@ -1,7 +1,8 @@
 * {
-    padding: 0;
-    margin: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* BODY */
@@ -10,32 +11,50 @@ body {
     color: rgba(0,0,0,.5);
     top: 15%;
 	background: linear-gradient(to right, rgb(80, 196, 95) , rgb(51, 104, 184)); 
+    padding: 0;
+    margin: 0;
 }
 
-
-/* CARD */
-
-.card {
-    box-shadow: 2px 2px 17px 2px gray;;
+.text-center {
+    text-align: center;
 }
 
-/* CARD CONTENT*/
+/* Todo container */
+.todo-container {
+    width: 55vw;
+    min-height: 12.5rem;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem 0;
 
-.card-title {
-    font-size: 22px;
-    margin-bottom: 2rem!important;
+    /* --------------------------------------------------------------- */
+
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
 }
 
-.form-label {
-    font-size: 12px;
-    margin-bottom: 0;
+hr {
+    background-color: #d3cccc;
+    height: 0.063rem;
+    border: 0;
 }
 
-input[type = "text"] {
-    border-top: none!important;
-    border-left: none!important;
-    border-right: none!important;
-    border-radius: 0;
+.task-form {
+    padding: 0 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.input-field {
+    display: flex;
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid #d3cccc;
+    padding: .7rem 1rem;
+    margin-right: .5rem;
 }
 
 .form-control:focus {
@@ -43,22 +62,52 @@ input[type = "text"] {
     outline: none !important;
 }
 
-.btn {
-    padding: .35rem 2rem;
-    text-transform: uppercase;
-    font-size: 13px;
+button {
+    width: 30%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: #346AB5;
 }
 
-.btn:focus {
-    box-shadow: none!important;
+button:hover {
+    background-color: #3A80A0;
 }
+
+#clear-btn {
+    margin-left: .3rem;
+}
+
+ul {
+    padding: 0 1.2rem;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    padding: .8rem 0;
+}
+
+li .fa-window-close {
+    color: #ee5959;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
 
 /* BG TEXT */
 
 h1 {
     font: 600 2rem 'Raleway', sans-serif;
     color: rgba(0,0,0,.5);
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: .5em;
     width: 100%;
